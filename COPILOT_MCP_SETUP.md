@@ -82,6 +82,22 @@ In VS Code:
 
 ## 5. Validate end-to-end
 
+### Quick validation flow
+
+1. Confirm Revit Routes is alive:
+
+```text
+http://localhost:48884/revit_mcp/status/
+```
+
+2. Confirm MCP server endpoint is available:
+
+```text
+http://localhost:8000/mcp
+```
+
+3. In Copilot Chat, run `get_revit_status` and verify the server responds.
+
 In Copilot Chat, run `get_revit_status`.
 
 Expected values:
