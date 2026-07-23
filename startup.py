@@ -45,6 +45,10 @@ def register_routes():
 
         register_document_routes(api)
 
+        from revit_mcp.psad_exclude_pipes_route import register_psad_routes
+
+        register_psad_routes(api)
+
         logger.info("All MCP routes registered successfully")
 
     except Exception as e:
